@@ -8,8 +8,8 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
-@CommandPermissions(source = SourceType.PLAYER, permission = "phantom.user.link")
-public class Command_link extends BukkitCommand {   
+@CommandPermissions(source = SourceType.PLAYER, permission = "phantom.user.forum")
+public class Command_forum extends BukkitCommand {   
 
     @Override
     public boolean run(CommandSender sender, Command cmd, String commandLabel, String[] args) {
