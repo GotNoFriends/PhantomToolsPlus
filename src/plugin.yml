@@ -15,9 +15,9 @@ commands:
     cc:
         usage: /<command>
         description: Clear the servers chat.
-    link:
+    forum:
         usage: /<command>
-        description: Check links for the server.
+        description: Check link for the forums.
     warn:
         usage: /<command>
         description: Warn a player
