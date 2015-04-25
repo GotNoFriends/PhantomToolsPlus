@@ -39,6 +39,7 @@ int length = args.length;
           break;
         }
       }
+      boolean playerFound = false;
       
       if (playerFound == false)
       {
@@ -48,7 +49,6 @@ int length = args.length;
       return true;
     }
     
-    
-    return false;
+  
   }
-}
+
