@@ -15,9 +15,9 @@ commands:
     forum:
         usage: /<command>
         description: Check link for the forums.
-    warn:
-        usage: /<command>
-        description: Warn a player
+    whip:
+        usage: /<command> <player>
+        description: Whip a player for breaking the rules!
     phantomtools:
         usage: /<command>
         description: Provide information regarding Phantomtools+
