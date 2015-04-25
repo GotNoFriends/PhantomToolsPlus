@@ -1,0 +1,42 @@
+name: PhantomToolsPlus
+main: me.zd12.phantomtools.PhantomTools
+version: 0.1
+description: PhantomToolsPlus.
+author: {PhantomOediv215, cowgomooo12}
+commands:
+    pcc:
+        usage: /<command>
+        description: Clear your personal chat.
+#    notchtroll:
+#        usage: /<command>
+#        description: Notch trolling.
+    phantomtools:
+        usage: /<command>
+        description: Provide information regarding Phantomtools+
+    colours:
+        usage: /<command>
+        description: Provide information about Minecraft colours.
+        aliases: colors
+#    gmc:
+#        usage: /<command>
+#        description: Change your gamemode to creative.
+#        aliases: creative
+#    gms:
+#        usage: /<command>
+#        description: Change your gamemode to survival.
+#        aliases: survival
+#    gma:
+#        usage: /<command>
+#        description: Change your gamemode to adventure.
+#        aliases: adventure
+#    cmdlist:
+#        usage: /<command>
+#        description: Display all commands.
+#        aliases: displaycmds
+#    ci:
+#        usage: /<command>
+#        description: Clear your inventory.
+    admininfo:
+        usage: /<command>
+        description: How to obtain administrator.
+        aliases: ai
