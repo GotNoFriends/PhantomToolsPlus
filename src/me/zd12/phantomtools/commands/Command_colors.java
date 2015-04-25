@@ -5,11 +5,11 @@ import net.pravian.bukkitlib.command.BukkitCommand;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-public class Command_colours extends BukkitCommand {   
+public class Command_colors extends BukkitCommand {   
 
     @Override
     public boolean run(CommandSender sender, Command cmd, String commandLabel, String[] args) {
-        sender.sendMessage(messages.pname + "Minecraft colours:");
+        sender.sendMessage(messages.pname + "Minecraft colors:");
         sender.sendMessage(messages.pname + ChatColor.BLACK + "&1" + ChatColor.GRAY + ", " + ChatColor.BLUE + "&1" + ChatColor.GRAY + ", " + ChatColor.GREEN + "&2" + ChatColor.GRAY + ", " + ChatColor.DARK_AQUA + "&3");
         sender.sendMessage(messages.pname + ChatColor.DARK_RED + "&4" + ChatColor.GRAY + ", " + ChatColor.DARK_PURPLE + "&5" + ChatColor.GRAY + ", " + ChatColor.GOLD + "&6" + ChatColor.GRAY + ", " + ChatColor.GRAY + "&7");
         sender.sendMessage(messages.pname + ChatColor.DARK_GRAY + "&8" + ChatColor.GRAY + ", " + ChatColor.DARK_AQUA + "&9" + ChatColor.GRAY + ", " + ChatColor.LIGHT_PURPLE + "&a" + ChatColor.GRAY + ", " + ChatColor.AQUA + "&b");
