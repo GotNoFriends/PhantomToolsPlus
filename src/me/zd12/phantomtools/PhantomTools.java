@@ -9,6 +9,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
+import me.za12.phantomtools.PTP_Config;
 import me.zd12.phantomtools.commands.Command_admininfo;
 
 public class PhantomTools extends BukkitPlugin
@@ -18,6 +19,10 @@ public class PhantomTools extends BukkitPlugin
     public BukkitCommandHandler handler;
 
     // YAML File Information
+
+    /**
+     *
+     */
     public static PTP_Config ptpconfig;
     public static FileConfiguration config;
 
