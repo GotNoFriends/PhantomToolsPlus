@@ -5,4 +5,6 @@ PhantomTools+ was designed as a fun plugin, just to play around with.  It's sinc
 --
 
 Premission nodes:
-TO FINISH
+
+phantom.user.* - Allows all access to user commands.
+phantom.ops.* - Allows all access to admin commmands.
