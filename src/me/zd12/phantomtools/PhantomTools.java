@@ -1,45 +1,63 @@
 package me.zd12.phantomtools;
 
-import me.zd12.phantomtools.commands.phantomtoolsplus;
+import java.sql.SQLException;
 import net.pravian.bukkitlib.BukkitLib;
 import net.pravian.bukkitlib.command.BukkitCommandHandler;
-import net.pravian.bukkitlib.config.YamlConfig;
 import net.pravian.bukkitlib.implementation.BukkitPlugin;
 import net.pravian.bukkitlib.util.LoggerUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.plugin.PluginManager;
+import me.zd12.phantomtools.commands.Command_admininfo;
 
-public class PhantomTools extends BukkitPlugin { 
-    public PhantomTools plugin;
-    public YamlConfig config;
+public class PhantomTools extends BukkitPlugin
+{
+
+    public static PhantomTools plugin;
     public BukkitCommandHandler handler;
 
+    // YAML File Information
+    public static PTP_Config ptpconfig;
+    public static FileConfiguration config;
+
     @Override
-    public void onLoad() {
+    public void onLoad()
+    {
         this.plugin = this;
         this.handler = new BukkitCommandHandler(plugin);
-        config = new YamlConfig(plugin, "config.yml", true);
+
     }
-    
+
     @Override
-    public void onEnable() {
+    public void onEnable()
+    {
+        // Bukkit Lib Important Stuff
         BukkitLib.init(plugin);
-        config = new YamlConfig(plugin, "config.yml");
-        config.load();
-        
-        handler.setCommandLocation(phantomtoolsplus.class.getPackage());
-        
-        LoggerUtils.info(plugin, messages.pname + " v" + plugin.getVersion() + " has been enabled.");
+        handler.setCommandLocation(Command_admininfo.class.getPackage());
+
+        // More YAML Setting Up and information.
+        ptpconfig = new PTP_Config(plugin, "config.yml");
+        ptpconfig.saveDefaultConfig();
+        config = ptpconfig.getConfig();
+
+        LoggerUtils.info(plugin, "has been enabled with no problems.");
+
     }
+
     @Override
-    public void onDisable() {
-        LoggerUtils.info(plugin, messages.pname + " has been disabled.");
-        LoggerUtils.info(plugin, "INFO: The PhantomToolsPlus plugin has been disabled, you may enable by restarting or reloading.");
-    
+    public void onDisable()
+    {
+        // Save the config.
+        ptpconfig.saveConfig();
+
+        LoggerUtils.info(plugin, "has been disabled with no problems.");
     }
+
     @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
+    public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
+    {
+        // BukkitLib Command Shit
         return handler.handleCommand(sender, cmd, commandLabel, args);
     }
 }
-
