@@ -2,10 +2,13 @@ package me.zd12.phantomtools.commands;
 
 import me.zd12.phantomtools.messages;
 import net.pravian.bukkitlib.command.BukkitCommand;
+import net.pravian.bukkitlib.command.CommandPermissions;
+import net.pravian.bukkitlib.command.SourceType;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
+@CommandPermissions(source = SourceType.ANY, permission = "phantom.user.pcc")
 public class Command_pcc extends BukkitCommand {   
 
     @Override
@@ -189,7 +192,7 @@ public class Command_pcc extends BukkitCommand {
         sender.sendMessage(ChatColor.RED + " ");
         sender.sendMessage(ChatColor.RED + " ");
         sender.sendMessage(ChatColor.RED + " ");
-        sender.sendMessage(messages.pname + "You have cleared you chat!");
+        sender.sendMessage(messages.pname + "You have cleared your chat!");
         return true;
     
     }
