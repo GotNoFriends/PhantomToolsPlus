@@ -2,10 +2,13 @@ package me.zd12.phantomtools.commands;
 
 import me.zd12.phantomtools.messages;
 import net.pravian.bukkitlib.command.BukkitCommand;
+import net.pravian.bukkitlib.command.CommandPermissions;
+import net.pravian.bukkitlib.command.SourceType;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
+@CommandPermissions(source = SourceType.ANY, permission = "phantom.user.phantomtools")
 public class Command_phantomtools extends BukkitCommand {   
 
     @Override
