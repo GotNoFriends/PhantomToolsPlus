@@ -7,6 +7,6 @@ public class messages {
     public static final String lulzname = ChatColor.GRAY + "[" + ChatColor.DARK_RED + "Lulz" + ChatColor.RED + "Craft" + ChatColor.GRAY + "] ";
     public static final String notch = ChatColor.WHITE + "<" + ChatColor.GOLD + "Notch" + ChatColor.WHITE + "> ";
     public static final String pver = "0.1";
-    public static final String pauthors = "zD12";
+    public static final String pauthors = "zD12, Revalation, xDestroyer217";
     public static final String plink = "https://hp.vexservers.net/misc/phantomtools/";
 }
