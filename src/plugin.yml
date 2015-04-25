@@ -1,10 +1,7 @@
 name: PhantomToolsPlus
-main: me.zd12.phantomtools.PhantomToolsPlus
+main: me.zd12.phantomtools.PhantomTools
 version: 0.1
-description: PhantomToolsPlus.
-prefix: PhantomTools+
-softdepend: [Essentials]
-author: {PhantomOediv215, cowgomooo12, xDestroyer217, Revalation}
+
 commands:
     pcc:
         usage: /<command>
