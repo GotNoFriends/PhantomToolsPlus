@@ -1,5 +1,5 @@
 name: PhantomToolsPlus
-main: me.zd12.phantomtoolsplus.phantomtoolsplus
+main: me.zd12.phantomtools.PhantomToolsPlus
 version: 0.1
 description: PhantomToolsPlus.
 prefix: PhantomTools+
