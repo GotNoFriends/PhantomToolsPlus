@@ -2,41 +2,36 @@ name: PhantomToolsPlus
 main: me.zd12.phantomtools.PhantomTools
 version: 0.1
 description: PhantomToolsPlus.
-author: {PhantomOediv215, cowgomooo12}
+prefix: PhantomTools+
+softdepend: [Essentials]
+author: {PhantomOediv215, cowgomooo12, xDestroyer217, Revalation}
 commands:
     pcc:
         usage: /<command>
         description: Clear your personal chat.
-#    notchtroll:
-#        usage: /<command>
-#        description: Notch trolling.
+    staff:
+        usage: /<command>
+        description: Check the LulzCraft Staff Team.
+    cc:
+        usage: /<command>
+        description: Clear the servers chat.
+    link:
+        usage: /<command>
+        description: Check links for the server.
+    warn:
+        usage: /<command>
+        description: Warn a player
     phantomtools:
         usage: /<command>
         description: Provide information regarding Phantomtools+
-    colours:
+    colors:
         usage: /<command>
-        description: Provide information about Minecraft colours.
+        description: Provide information about Minecraft colors.
         aliases: colors
-#    gmc:
-#        usage: /<command>
-#        description: Change your gamemode to creative.
-#        aliases: creative
-#    gms:
-#        usage: /<command>
-#        description: Change your gamemode to survival.
-#        aliases: survival
-#    gma:
-#        usage: /<command>
-#        description: Change your gamemode to adventure.
-#        aliases: adventure
-#    cmdlist:
-#        usage: /<command>
-#        description: Display all commands.
-#        aliases: displaycmds
-#    ci:
-#        usage: /<command>
-#        description: Clear your inventory.
     admininfo:
         usage: /<command>
         description: How to obtain administrator.
         aliases: ai
+    soon:
+        usage: /<command>
+        description: Explain what's planned for PhantomTools+
